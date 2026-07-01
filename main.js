@@ -241,6 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const types   = getChecked('filterType');
       const sizes   = getChecked('filterSize');
       const conds   = getChecked('filterCond');
+      const heights = getChecked('filterHeight');
       const sort    = sortSelect ? sortSelect.value : 'default';
  
       let visible = 0;
@@ -249,12 +250,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const t = card.dataset.type;
         const s = card.dataset.size;
         const c = card.dataset.cond;
+        const h = card.dataset.height;
  
         const matchType = types.length === 0 || types.indexOf(t) !== -1;
         const matchSize = sizes.length === 0 || sizes.indexOf(s) !== -1;
         const matchCond = conds.length === 0 || conds.indexOf(c) !== -1;
- 
-        if (matchType && matchSize && matchCond) {
+        const matchHeight = heights.length === 0 || heights.indexOf(h) !== -1;
+
+        if (matchType && matchSize && matchCond && matchHeight) {
           card.classList.remove('hidden');
           visible++;
         } else {
@@ -291,15 +294,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }
  
       // Active filter tags
-      renderActiveTags(types, sizes, conds);
+      renderActiveTags(types, sizes, conds, heights);
     }
  
     // Labels for display
     const typeLabels = { 'side-door': 'Side Door', 'front-door': 'Front Door', 'wwt': 'Wind and Watertight' };
     const sizeLabels = { '10ft': '10ft', '20ft': '20ft', '40ft': '40ft' };
     const condLabels = { 'new': 'New', 'used': 'Used' };
+    const heightLabels = { 'standard': 'Standard', 'high-cube': 'High Cube' };
  
-    function renderActiveTags(types, sizes, conds) {
+    function renderActiveTags(types, sizes, conds, heights) {
       if (!activeTagsEl) return;
       activeTagsEl.innerHTML = '';
  
@@ -317,6 +321,7 @@ document.addEventListener('DOMContentLoaded', function () {
       types.forEach(function (v) { addTag(v, typeLabels[v] || v, 'filterType'); });
       sizes.forEach(function (v) { addTag(v, sizeLabels[v] || v, 'filterSize'); });
       conds.forEach(function (v) { addTag(v, condLabels[v] || v, 'filterCond'); });
+      heights.forEach(function (v) { addTag(v, heightLabels[v] || v, 'filterHeight'); });
     }
  
     // Attach change listeners to all filter checkboxes

@@ -58,7 +58,7 @@
         <span class="sep">/</span>
         <span>Container Storage</span>
       </div>
-      <h1>Steel Container <span>For Sale</span></h1>
+      <h1>Sea Container <span>For Sale</span></h1>
       <p>Browse our full inventory of new and used shipping containers available for rent or purchase in Brockville, Ontario.</p>
       <div style="margin-top:1.5rem;display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;">
         <button class="btn btn--amber" data-modal-open>&#9993;&nbsp; Get a Quote</button>
@@ -162,6 +162,27 @@
               </label>
             </div>
           </div>
+
+          <!-- Height (20ft and 40ft only) -->
+          <div class="filter-group">
+            <span class="filter-group__label">Height</span>
+            <div class="filter-options">
+              <label class="filter-option">
+                <input type="checkbox" name="filterHeight" value="standard">
+                <div class="filter-option__text">
+                  <span class="filter-option__name">Standard (Low Cube)</span>
+                  <span class="filter-option__sub">8.5ft exterior height</span>
+                </div>
+              </label>
+              <label class="filter-option">
+                <input type="checkbox" name="filterHeight" value="high-cube">
+                <div class="filter-option__text">
+                  <span class="filter-option__name">High Cube</span>
+                  <span class="filter-option__sub">9.6ft exterior height, extra headroom</span>
+                </div>
+              </label>
+            </div>
+          </div>
  
           <!-- Quick inquiry CTA inside panel -->
           <div style="padding-top:1.25rem;border-top:1px solid var(--c-border);margin-top:0.25rem;">
@@ -207,6 +228,7 @@
             data-cond="new"
             data-price="89"
             data-size-num="10"
+            data-height="standard"
           >
             <div class="container-card__visual">
               <div class="container-card__badges">
@@ -239,10 +261,6 @@
                 </div>
               </div>
               <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$89</span><span class="mo">/mo</span></span>
-                </div>
                 <button class="btn btn--amber btn--sm" data-modal-open data-container="10ft Front Door New">Inquire</button>
               </div>
             </div>
@@ -256,6 +274,7 @@
             data-cond="used"
             data-price="65"
             data-size-num="10"
+            data-height="standard"
           >
             <div class="container-card__visual">
               <div class="container-card__badges">
@@ -288,64 +307,10 @@
                 </div>
               </div>
               <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$65</span><span class="mo">/mo</span></span>
-                </div>
                 <button class="btn btn--amber btn--sm" data-modal-open data-container="10ft Front Door Used">Inquire</button>
               </div>
             </div>
           </article>
- 
-          <!-- Card 3: 10ft Side Door New -->
-          <article
-            class="container-card"
-            data-type="side-door"
-            data-size="10ft"
-            data-cond="new"
-            data-price="99"
-            data-size-num="10"
-          >
-            <div class="container-card__visual">
-              <div class="container-card__badges">
-                <span class="badge badge--size">10ft</span>
-                <span class="badge badge--type">Side Door</span>
-                <span class="badge badge--cond-new">New</span>
-              </div>
-              <div class="container-card__avail low" title="Low stock"></div>
-              <img src="../assets/container.png" alt="Container C-103: 10ft Side Door, One-Trip New" class="container-card__image">
-            </div>
-            <div class="container-card__body">
-              <div class="container-card__title">10ft Side Door</div>
-              <div class="container-card__meta">Unit ID: C-103 &nbsp;|&nbsp; One-Trip New</div>
-              <div class="container-card__specs">
-                <div class="container-card__spec">
-                  <span class="spec-label">Dimensions</span>
-                  <span class="spec-val">10 x 8 x 8.5ft</span>
-                </div>
-                <div class="container-card__spec">
-                  <span class="spec-label">Side Access</span>
-                  <span class="spec-val">Full-length swing</span>
-                </div>
-                <div class="container-card__spec">
-                  <span class="spec-label">Best For</span>
-                  <span class="spec-val">Tight site access</span>
-                </div>
-                <div class="container-card__spec">
-                  <span class="spec-label">Availability</span>
-                  <span class="spec-val" style="color:var(--c-amber);">2 Left</span>
-                </div>
-              </div>
-              <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$99</span><span class="mo">/mo</span></span>
-                </div>
-                <button class="btn btn--amber btn--sm" data-modal-open data-container="10ft Side Door New">Inquire</button>
-              </div>
-            </div>
-          </article>
- 
           <!-- Card 4: 20ft Front Door New -->
           <article
             class="container-card"
@@ -354,6 +319,7 @@
             data-cond="new"
             data-price="129"
             data-size-num="20"
+            data-height="standard"
           >
             <div class="container-card__visual">
               <div class="container-card__badges">
@@ -386,10 +352,6 @@
                 </div>
               </div>
               <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$129</span><span class="mo">/mo</span></span>
-                </div>
                 <button class="btn btn--amber btn--sm" data-modal-open data-container="20ft Front Door New">Inquire</button>
               </div>
             </div>
@@ -403,6 +365,7 @@
             data-cond="used"
             data-price="99"
             data-size-num="20"
+            data-height="standard"
           >
             <div class="container-card__visual">
               <div class="container-card__badges">
@@ -434,10 +397,6 @@
                 </div>
               </div>
               <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$99</span><span class="mo">/mo</span></span>
-                </div>
                 <button class="btn btn--amber btn--sm" data-modal-open data-container="20ft Front Door Used">Inquire</button>
               </div>
             </div>
@@ -451,6 +410,7 @@
             data-cond="new"
             data-price="149"
             data-size-num="20"
+            data-height="standard"
           >
             <div class="container-card__visual">
               <div class="container-card__badges">
@@ -483,10 +443,6 @@
                 </div>
               </div>
               <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$149</span><span class="mo">/mo</span></span>
-                </div>
                 <button class="btn btn--amber btn--sm" data-modal-open data-container="20ft Side Door New">Inquire</button>
               </div>
             </div>
@@ -500,6 +456,7 @@
             data-cond="used"
             data-price="85"
             data-size-num="20"
+            data-height="standard"  
           >
             <div class="container-card__visual">
               <div class="container-card__badges">
@@ -531,10 +488,6 @@
                 </div>
               </div>
               <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$85</span><span class="mo">/mo</span></span>
-                </div>
                 <button class="btn btn--amber btn--sm" data-modal-open data-container="20ft WWT Used">Inquire</button>
               </div>
             </div>
@@ -548,6 +501,7 @@
             data-cond="new"
             data-price="169"
             data-size-num="40"
+            data-height="standard"
           >
             <div class="container-card__visual">
               <div class="container-card__badges">
@@ -579,10 +533,6 @@
                 </div>
               </div>
               <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$169</span><span class="mo">/mo</span></span>
-                </div>
                 <button class="btn btn--amber btn--sm" data-modal-open data-container="40ft Front Door New">Inquire</button>
               </div>
             </div>
@@ -596,6 +546,7 @@
             data-cond="used"
             data-price="129"
             data-size-num="40"
+            data-height="standard"
           >
             <div class="container-card__visual">
               <div class="container-card__badges">
@@ -627,10 +578,6 @@
                 </div>
               </div>
               <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$129</span><span class="mo">/mo</span></span>
-                </div>
                 <button class="btn btn--amber btn--sm" data-modal-open data-container="40ft Front Door Used">Inquire</button>
               </div>
             </div>
@@ -644,6 +591,7 @@
             data-cond="new"
             data-price="199"
             data-size-num="40"
+            data-height="standard"
           >
             <div class="container-card__visual">
               <div class="container-card__badges">
@@ -675,10 +623,6 @@
                 </div>
               </div>
               <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$199</span><span class="mo">/mo</span></span>
-                </div>
                 <button class="btn btn--amber btn--sm" data-modal-open data-container="40ft Side Door New">Inquire</button>
               </div>
             </div>
@@ -692,6 +636,7 @@
             data-cond="used"
             data-price="110"
             data-size-num="40"
+            data-height="standard"
           >
             <div class="container-card__visual">
               <div class="container-card__badges">
@@ -723,10 +668,6 @@
                 </div>
               </div>
               <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$110</span><span class="mo">/mo</span></span>
-                </div>
                 <button class="btn btn--amber btn--sm" data-modal-open data-container="40ft WWT Used">Inquire</button>
               </div>
             </div>
@@ -740,6 +681,7 @@
             data-cond="new"
             data-price="119"
             data-size-num="20"
+            data-height="standard"
           >
             <div class="container-card__visual">
               <div class="container-card__badges">
@@ -771,11 +713,179 @@
                 </div>
               </div>
               <div class="container-card__footer">
-                <div class="container-card__price">
-                  <span class="from">From</span>
-                  <span><span class="amount">$119</span><span class="mo">/mo</span></span>
-                </div>
                 <button class="btn btn--amber btn--sm" data-modal-open data-container="20ft WWT New">Inquire</button>
+              </div>
+            </div>
+          </article>
+
+           <!-- Card HC-1: 20ft High Cube Front Door New -->
+          <article
+            class="container-card"
+            data-type="front-door"
+            data-size="20ft"
+            data-cond="new"
+            data-price="149"
+            data-size-num="20"
+            data-height="high-cube"
+          >
+            <div class="container-card__visual">
+              <div class="container-card__badges">
+                <span class="badge badge--size">20ft</span>
+                <span class="badge badge--type">Front Door</span>
+                <span class="badge badge--cond-new">New</span>
+              </div>
+              <div class="container-card__avail" title="In stock"></div>
+              <div class="container-card__emoji">&#128666;</div>
+            </div>
+            <div class="container-card__body">
+              <div class="container-card__title">20ft High Cube</div>
+              <div class="container-card__meta">Unit ID: HC-201 &nbsp;|&nbsp; One-Trip New, High Cube</div>
+              <div class="container-card__specs">
+                <div class="container-card__spec">
+                  <span class="spec-label">Dimensions</span>
+                  <span class="spec-val">20 x 8 x 9.6ft</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Interior Height</span>
+                  <span class="spec-val">8.9ft (vs 7.8ft standard)</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Capacity</span>
+                  <span class="spec-val">~1,560 cu ft</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Availability</span>
+                  <span class="spec-val" style="color:#3ab56a;">In Stock</span>
+                </div>
+              </div>
+            </div>
+          </article>
+ 
+          <!-- Card HC-2: 20ft High Cube Front Door Used -->
+          <article
+            class="container-card"
+            data-type="front-door"
+            data-size="20ft"
+            data-cond="used"
+            data-price="115"
+            data-size-num="20"
+            data-height="high-cube"
+          >
+            <div class="container-card__visual">
+              <div class="container-card__badges">
+                <span class="badge badge--size">20ft</span>
+                <span class="badge badge--type">Front Door</span>
+                <span class="badge badge--cond-used">Used</span>
+              </div>
+              <div class="container-card__avail" title="In stock"></div>
+              <div class="container-card__emoji">&#128666;</div>
+            </div>
+            <div class="container-card__body">
+              <div class="container-card__title">20ft High Cube</div>
+              <div class="container-card__meta">Unit ID: HC-202 &nbsp;|&nbsp; Cargo-Worthy Used, High Cube</div>
+              <div class="container-card__specs">
+                <div class="container-card__spec">
+                  <span class="spec-label">Dimensions</span>
+                  <span class="spec-val">20 x 8 x 9.6ft</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Interior Height</span>
+                  <span class="spec-val">8.9ft (vs 7.8ft standard)</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Condition</span>
+                  <span class="spec-val">CWO Inspected</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Availability</span>
+                  <span class="spec-val" style="color:#3ab56a;">In Stock</span>
+                </div>
+              </div>
+            </div>
+          </article>
+ 
+          <!-- Card HC-3: 40ft High Cube Front Door New -->
+          <article
+            class="container-card"
+            data-type="front-door"
+            data-size="40ft"
+            data-cond="new"
+            data-price="199"
+            data-size-num="40"
+            data-height="high-cube"
+          >
+            <div class="container-card__visual">
+              <div class="container-card__badges">
+                <span class="badge badge--size">40ft</span>
+                <span class="badge badge--type">Front Door</span>
+                <span class="badge badge--cond-new">New</span>
+              </div>
+              <div class="container-card__avail" title="In stock"></div>
+              <div class="container-card__emoji">&#128666;</div>
+            </div>
+            <div class="container-card__body">
+              <div class="container-card__title">40ft High Cube</div>
+              <div class="container-card__meta">Unit ID: HC-401 &nbsp;|&nbsp; One-Trip New, High Cube</div>
+              <div class="container-card__specs">
+                <div class="container-card__spec">
+                  <span class="spec-label">Dimensions</span>
+                  <span class="spec-val">40 x 8 x 9.6ft</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Interior Height</span>
+                  <span class="spec-val">8.9ft (vs 7.8ft standard)</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Capacity</span>
+                  <span class="spec-val">~2,985 cu ft</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Availability</span>
+                  <span class="spec-val" style="color:#3ab56a;">In Stock</span>
+                </div>
+              </div>
+            </div>
+          </article>
+ 
+          <!-- Card HC-4: 40ft High Cube Front Door Used -->
+          <article
+            class="container-card"
+            data-type="front-door"
+            data-size="40ft"
+            data-cond="used"
+            data-price="155"
+            data-size-num="40"
+            data-height="high-cube"
+          >
+            <div class="container-card__visual">
+              <div class="container-card__badges">
+                <span class="badge badge--size">40ft</span>
+                <span class="badge badge--type">Front Door</span>
+                <span class="badge badge--cond-used">Used</span>
+              </div>
+              <div class="container-card__avail" title="In stock"></div>
+              <div class="container-card__emoji">&#128666;</div>
+            </div>
+            <div class="container-card__body">
+              <div class="container-card__title">40ft High Cube</div>
+              <div class="container-card__meta">Unit ID: HC-402 &nbsp;|&nbsp; Cargo-Worthy Used, High Cube</div>
+              <div class="container-card__specs">
+                <div class="container-card__spec">
+                  <span class="spec-label">Dimensions</span>
+                  <span class="spec-val">40 x 8 x 9.6ft</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Interior Height</span>
+                  <span class="spec-val">8.9ft (vs 7.8ft standard)</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Condition</span>
+                  <span class="spec-val">CWO Inspected</span>
+                </div>
+                <div class="container-card__spec">
+                  <span class="spec-label">Availability</span>
+                  <span class="spec-val" style="color:#3ab56a;">In Stock</span>
+                </div>
               </div>
             </div>
           </article>
