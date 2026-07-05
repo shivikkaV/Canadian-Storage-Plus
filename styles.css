@@ -285,7 +285,7 @@ input, select, textarea { font-family: inherit; }
   border-bottom: 1px solid var(--c-border);
   transition: color var(--ease);
 }
-.mobile-nav a:hover, .mobile-nav a.active { color: var(--c-amber); }
+.mobile-nav a:hover, .mobile-nav a.active { color: var(--c-dim); }
 .mobile-nav .btn { margin-top: 1rem; }
 
 /* Page offset */
